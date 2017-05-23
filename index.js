@@ -1,2 +1,3 @@
 var AWSXRay = require('aws-xray-sdk');
-module.exports = AWSXRay.captureMySQL(require('mysql'));
+var mysql = require('mysql');
+module.exports = AWSXRay.captureMySQL(mysql);
